@@ -2,11 +2,13 @@
 This is a script that reads from weather_newyork.csv (using the CSV module), selects the date, mean_temp, precip, and events columns, and inserts them row-by-row into the table I created, weather_newyork.
 
 Ex. from terminal...
+
 ``
-Number of row in weather_newyork table: 366
+Number of rows in weather_newyork table: 366
 ``
+
 Ex. from db...
-```
+``
 sqlite> SELECT * FROM weather_newyork;
 date      mean_temp  precip  events       
 --------  ---------  ------  -------------
@@ -29,4 +31,4 @@ date      mean_temp  precip  events
 1/17/16   36         0.05    Fog-Snow     
 1/18/16   25                 Snow         
 1/19/16   22         0.0
-```            
+``            
