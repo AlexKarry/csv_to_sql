@@ -3,12 +3,13 @@ This is a script that reads from weather_newyork.csv (using the CSV module), sel
 
 Ex. from terminal...
 
-``
+```
 Number of rows in weather_newyork table: 366
-``
+```
 
 Ex. from db...
-``
+
+```
 sqlite> SELECT * FROM weather_newyork;
 date      mean_temp  precip  events       
 --------  ---------  ------  -------------
@@ -31,4 +32,4 @@ date      mean_temp  precip  events
 1/17/16   36         0.05    Fog-Snow     
 1/18/16   25                 Snow         
 1/19/16   22         0.0
-``            
+```           
