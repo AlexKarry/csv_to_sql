@@ -22,14 +22,14 @@ header = next(reader)
 
 for row in reader:
     date = row[0]
-    mean_temp = row[1]
+    mean_temp = int(row[1])
     precip = row[17]
     events = row[19]
     if precip == 'T':
         precip = None
     else:
         precip = float(precip)
-    cursor.execute(insert_query, (date, int(mean_temp), precip, events))
+    cursor.execute(insert_query, (date, mean_temp, precip, events))
 
 cursor.execute('SELECT COUNT(*) FROM weather_newyork')
 row_count = cursor.fetchone()[0]
